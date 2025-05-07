@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Form</title>
+    <link rel="stylesheet" href="CSS/contentform.css">
+</head>
+<body>
+    <div class="overlay">
+        <h1>Flight Cost Calculator</h1>
+        <form id="flightForm">
+            <label for="passengers">Number of Passengers:</label>
+            <input type="number" id="passengers" min="1" required><br>
+
+            <label for="ticketClass">Select Ticket Class:</label>
+            <select id="ticketClass">
+                <option value="economy">Economy</option>
+                <option value="business">Business</option>
+                <option value="first">First Class</option>
+            </select><br>
+
+            <label for="baggage1">Carry-On ($25)</label>
+            <input type="checkbox" id="baggage1" value="carryOn" title="Select if you want to add a carry-on bag for $25"><br>
+            
+            <label for="baggage2">Checked Bag ($50)</label>
+            <input type="checkbox" id="baggage2" value="checkBag" title="Select if you want to add a checked bag for $50"><br>
+            
+            <!--discount input-->
+            <label for="discountCode">Discount Code (Optional):</label>
+            <input type="text" id="discountCode" placeholder="Enter discount code"><br>
+
+            <button type="button" onclick="calculateFlightCost()">Calculate Total Cost</button>
+        </form>
+        <h2 id="result"></h2>
+    </div> 
+</body>
+    <script src="JS/contentform.js"></script>
+</html
