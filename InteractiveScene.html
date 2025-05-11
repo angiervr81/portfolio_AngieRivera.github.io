@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pac-Man Interactive Canvas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Interactive Pac-Man Scene</h1>
+
+  <div class="controls">
+    <fieldset>
+      <legend>Select Background:</legend>
+      <label><input type="radio" name="bg" value="bg1" checked> Beach</label>
+      <label><input type="radio" name="bg" value="bg2"> Forest</label>
+      <label><input type="radio" name="bg" value="bg3"> City</label>
+    </fieldset>
+
+    <label>
+      Move Pac-Man:
+      <input type="range" id="positionSlider" min="0" max="570" value="200">
+    </label>
+
+    <fieldset>
+      <legend>Fruits:</legend>
+      <label><input type="checkbox" id="item1"> Cherry</label>
+      <label><input type="checkbox" id="item2"> Strawberry</label>
+      <label><input type="checkbox" id="item3"> Orange</label>
+    </fieldset>
+
+    <div class="buttons">
+      <button id="sound1">Play Sound 1</button>
+      <button id="sound2">Play Sound 2</button>
+      <button id="sound3">Play Sound 3</button>
+    </div>
+  </div>
+
+  <canvas id="scene" width="600" height="400"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
