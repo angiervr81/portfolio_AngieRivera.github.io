@@ -1,26 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Data Visualization</title>
-  <link rel="stylesheet" href="CSS/DataVisualiztion.css">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.2/papaparse.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Top Pokémon Picks</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        canvas {
+            max-width: 600px;
+            margin: 30px auto;
+            display: block;
+        }
+        h2 {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-
-  <h1>VISUALIZE YOUR DATA </h1>
-
-  <input type="file" id="csvFileInput" accept=".csv" />
-  
-  <div class="chart-container">
+    <h2>Doughnut Chart - Top Pokémon Picks </h2>
     <canvas id="doughnutChart"></canvas>
-  </div>
 
-  <div class="chart-container">
+    <h2>Horizontal Bar Chart - Top Pokémon Picks</h2>
     <canvas id="barChart"></canvas>
-  </div>
 
-  <script src="script.js"></script>
+    <script>
+        const labels = ["Pikachu", "Charizard", "Bulbasaur", "Squirtle", "Eevee", "Gengar", "Lucario"];
+        const dataValues = [14200, 13100, 9800, 8450, 7900, 6720, 5310];
+
+        const backgroundColors = [
+            "#FFD700", "#FF4500", "#7CFC00", "#1E90FF", "#FFB6C1", "#800080", "#4682B4"
+        ];
+
+        // Doughnut Chart
+        new Chart(document.getElementById("doughnutChart"), {
+            type: 'doughnut',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Times Picked',
+                    data: dataValues,
+                    backgroundColor: backgroundColors
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'right'
+                    },
+                    title: {
+                        display: true,
+                        text: 'Top Pokémon Chosen by Players This Week'
+                    }
+                }
+            }
+        });
+
+        // Horizontal Bar Chart
+        new Chart(document.getElementById("barChart"), {
+            type: 'bar',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Times Picked',
+                    data: dataValues,
+                    backgroundColor: backgroundColors
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    title: {
+                        display: true,
+                        text: 'Top Pokémon Chosen by Players This Week'
+                    }
+                }
+            }
+        });
+    </script>
 </body>
 </html>
