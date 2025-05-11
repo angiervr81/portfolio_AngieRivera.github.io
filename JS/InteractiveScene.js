@@ -13,9 +13,9 @@ let direction = 'right';
 let background = 'bg1';
 
 // Sound Effects
-const sound1 = new Audio('Sound/pacman.wav');
-const sound2 = new Audio('Sound/gameloop.wav');
-const sound3 = new Audio('Sound/gamebleeps.wav');
+const sound1 = new Audio('Sounds/pacman.wav');
+const sound2 = new Audio('Sounds/gameloop.wav');
+const sound3 = new Audio('Sounds/gamebleeps.wav');
 
 document.getElementById('sound1').onclick = () => sound1.play();
 document.getElementById('sound2').onclick = () => sound2.play();
