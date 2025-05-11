@@ -1,0 +1,21 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.chart-container {
+  width: 60%;
+  margin: 30px auto;
+}
+
+canvas {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+.chart-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
