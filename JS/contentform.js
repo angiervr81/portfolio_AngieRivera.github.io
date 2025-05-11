@@ -4,17 +4,13 @@
             var ticketClass = document.getElementById('ticketClass').value;
             var carryOn = document.getElementById('carryOn').checked;
             var checkedBag = document.getElementById('checkedBag').checked;
-
+            var discountCode = document.getElementById('discountCode').value.trim();
             // Validate input
             if (!passengers || passengers <= 0) {
                 alert('Please enter a valid number of passengers');
                 return;
             }
-            // check if at least one baggage option is selected
-            if(! carryOn && !checkedBag) {
-                alert('Please select at least one baggage option');
-                return;
-            }
+
             // Base prices per class
             var basePrices = {
                 'economy': 200,
@@ -42,14 +38,18 @@
 
             //Discount
             var discount = 0;
-            if (ticketClass === 'business' || ticketClass === 'first') {
-                discount = 0.10 * totalTicketCost; // 10% discount for economy class
+            if (discountCode === 'SAVE10') {
+                discount = 0.10 * (totalTicketCost + totalBaggageCost); // 10% discount
+            } else if (discountCode === 'SAVE20') {
+                discount = 0.20 * (totalTicketCost + totalBaggageCost); // 20% discount
             }
              
             // Total cost calculation
             var totalCost = totalTicketCost + totalBaggageCost - discount;
 
             // Display result
-            document.getElementById('result').innerHTML = `Total Cost: $${totalCost.toFixed(2)}<br> 
-            (Ticket Cost: $${totalTicketCost.toFixed(2)}, Baggage Cost: $${totalBaggageCost.toFixed(2)})`;
+            document.getElementById('result').innerHTML = `
+                <strong>Total Cost: $${totalCost.toFixed(2)}</strong><br>
+                (Ticket Cost: $${totalTicketCost.toFixed(2)}, Baggage Cost: $${totalBaggageCost.toFixed(2)}, Discount: $${discount.toFixed(2)})
+    `       ;
         }
