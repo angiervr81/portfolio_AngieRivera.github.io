@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projects</title>
+        <link rel="stylesheet" href="css/projectstyle.css">
+        <!-- Bootstrap CSS -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+        <style>
+            .custom-link {
+                text-decoration: none; /* Remove underline */
+                color: #3498db; /* Set initial color (blue, you can change it) */
+            }
+
+            /* Hover effect for custom link */
+            .custom-link:hover {
+                color: #2c3e50; /* Change color on hover */
+                text-decoration: underline; /* Add underline on hover */
+            }
+
+            .project-card {
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                overflow: hidden;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                margin-bottom: 20px;
+                transition: transform 0.3s ease;
+            }
+
+            .project-card:hover {
+                transform: scale(1.05);
+            }
+
+            .project-card img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+
+            .project-content {
+                padding: 15px;
+            }
+
+            .project-title {
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+
+            .project-description {
+                font-size: 1rem;
+                color: #555;
+            }
+        </style>
+    </head>
+    <body>
+        <header id="header">
+            <!-- Logo Section-->
+            <div id="logo" data-content-field="site-title">
+                <a href="index.html">
+                    <h1 class="text-4xl font-bold" style="color: black; text-decoration: none;">ANGIE RIVERA</h1>
+                </a>
+            </div>
+            <div id="topNav" data-content-field="navigation">
+                <nav class="main-nav">
+                    <a class="text-blue-500 mx-2" href="projects.html">MULTIMEDIA PROJECTS</a>
+                    <a class="text-blue-500 mx-2" href="codes.html">CODES</a>
+                    <a class="text-blue-500 mx-2" href="about.html">ABOUT</a>
+                    <a class="text-blue-500 mx-2" href="contact.html">CONTACT</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="container mt-5">
+            <h2 class="text-center mb-5">My Projects</h2>
+
+            <div class="row">
+                <!-- Project 1: Scene Project -->
+                <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                    <a href="sceneproject.html" class="project-card">
+                        <img src="images/Scene Project.jpeg" alt="Scene Project Image">
+                        <div class="project-content">
+                            <div class="project-title">Scene Project</div>
+                            <div class="project-description">
+                                <p>The Scene Assignment involves creating a visually composition using the HTML5 
+                                <code>&lt;canvas&gt;</code> element. It requires a background image, at least two foreground images,
+                                and text displaying the author's name and scene title. We learned HTML and JavaScript files, load images, 
+                                and draw elements on the canvas. In this project, I created a scene with a background image of a wave, 
+                                two foreground images of a seagull and a dolphin.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Project 2: Flight Cost Calculator -->
+                <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                    <a href="contentform.html" class="project-card">
+                        <img src="images/Contentform.jpeg" alt="Flight Cost Calculator Image">
+                        <div class="project-content">
+                            <div class="project-title">Flight Cost Calculator</div>
+                            <div class="project-description">
+                                <p>This project is meant to create an interactive display that uses form inputs like text fields, 
+                                checkboxes, and dropdowns to calculate and display the total cost based on user selections. 
+                                It includes options for ticket class, baggage, and discount codes. A travel-themed background image 
+                                enhances the visual appeal, aligning with the goal of combining math-based calculations with interactive, 
+                                styled web forms.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Project 3: PAC Away -->
+                <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                    <a href="InteractiveScene.html" class="project-card">
+                        <img src="images/Pac Away.jpeg" alt="PAC Away">
+                        <div class="project-content">
+                            <div class="project-title">PAC Away</div>
+                            <div class="project-description">
+                                <p>Interactive Pac-Man Canvas Scene is a fun project where users can interact with a customizable Pac-Man-themed scene. 
+                                The canvas allows users to move a Pac-Man character across the screen using a slider, toggle the visibility of Pac-Man 
+                                fruits like cherries, strawberries, and oranges, and switch between different backgrounds such as a darkroom, city life, and beach.
+                                Additionally, the project includes sound effects that can be triggered by buttons, bringing an extra layer of interactivity.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </main>
+
+        <!-- Bootstrap JS, Popper.js, and jQuery (for Bootstrap components that require JS) -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</html>
