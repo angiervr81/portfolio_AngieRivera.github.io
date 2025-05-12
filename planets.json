@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Mercury",
+    "description": "Mercury is the closest planet to the Sun.",
+    "image": "mercury.jpg",
+    "moons": 0
+  },
+  {
+    "name": "Venus",
+    "description": "Venus is similar in size to Earth but has a thick, toxic atmosphere.",
+    "image": "venus.jpg",
+    "moons": 0
+  },
+  {
+    "name": "Earth",
+    "description": "Earth is the only planet known to support life.",
+    "image": "earth.jpg",
+    "moons": 1
+  },
+  {
+    "name": "Mars",
+    "description": "Mars is known as the Red Planet due to its reddish appearance.",
+    "image": "mars.jpg",
+    "moons": 2
+  },
+  {
+    "name": "Jupiter",
+    "description": "Jupiter is the largest planet in our solar system.",
+    "image": "jupiter.jpg",
+    "moons": 79
+  },
+  {
+    "name": "Saturn",
+    "description": "Saturn is famous for its stunning rings.",
+    "image": "saturn.jpg",
+    "moons": 83
+  },
+  {
+    "name": "Uranus",
+    "description": "Uranus has a unique tilt and is often referred to as an ice giant.",
+    "image": "uranus.jpg",
+    "moons": 27
+  },
+  {
+    "name": "Neptune",
+    "description": "Neptune is known for its deep blue color and strong winds.",
+    "image": "neptune.jpg",
+    "moons": 14
+  }
+
+]
