@@ -1,25 +1,26 @@
 /* Reset margins and padding for all elements */
 body, h1, nav, a {
-    margin: 30;
-    padding: 30;
+    margin: 0;
+    padding: 0;
 }
 
 /* Body styling */
 body {
     background-color: #f0f0f0;
     font-family: "Impact", sans-serif;
-    font-size: larger;
-    line-height: 1.10em;
-    letter-spacing: 0.4em;
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.2em;
 }
 
 /* Header Styling */
 header {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 
-header h1 {
+/* Logo Styling */
+header #logo h1 {
     font-size: 2.5rem;
     font-weight: bold;
 }
@@ -33,17 +34,65 @@ nav {
 nav a {
     text-decoration: none;
     color: #687280;
-    font-size: 1rem;
-    margin: 0 10px;
+    font-size: 1.1rem;
+    margin: 0 15px;
 }
 
 /* Hover effect for links */
 nav a:hover {
-    color: #fff; /* Change text color on hover */
-    background-color: #333; /* Background color change on hover */
+    color: #fff;
+    background-color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
-/* Grid layout for images */
+/* Container for the contact form */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading inside the contact form */
+.container h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Form input styling */
+.form-control {
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+/* Button Styling */
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    color: #555;
+}
+
+/* Grid layout for images (if any added later) */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
