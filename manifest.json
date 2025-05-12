@@ -11,6 +11,52 @@
       "src": "/images/SolarExplorer.jpg",
       "sizes": "192x192",
       "type": "image/jpg"
+    },
+    {
+      "src": "/images/venus.jpg",
+      "sizes": "512x512",
+      "type": "image/jpg"
+    },
+    {
+      "src": "/images/earth.jpg.jpg",
+      "sizes": "1024x1024",
+      "type": "image/jpg"
+    },
+    {
+      "src": "/images/mars.jpg.jpg",
+      "sizes": "2048x2048",
+      "type": "image/jpg"
+    },
+    {
+      "src": "/images/jupiter.jpg.jpg",
+      "sizes": "4096x4096",
+      "type": "image/jpg"
+    },
+    {
+      "src": "/images/saturn.jpg.jpg",
+      "sizes": "8192x8192",
+      "type": "image/jpg"
+    },
+    {
+      "src": "/images/uranus.jpg.jpg",
+      "sizes": "16384x16384",
+      "type": "image/jpg"
+    },
+    {
+      "src": "/images/neptune.jpg.jpg",
+      "sizes": "32768x32768",
+      "type": "image/jpg"
+    },
+    {
+      "src": "/images/moon.jpg.jpg",
+      "sizes": "65536x65536",
+      "type": "image/jpg"
+    },
+    {
+      "src": "/images/sun.jpg.jpg",
+      "sizes": "131072x131072",
+      "type": "image/jpg"
     }
   ]
+
 }
